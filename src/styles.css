@@ -1,0 +1,95 @@
+:root {
+  --light-cyan: hsl(193, 38%, 86%);
+  --neon-green: hsl(150, 100%, 66%);
+  --gray-blue: hsl(217, 19%, 38%);
+  --dark-gray-blue: hsl(217, 19%, 24%);
+  --dark-blue: hsl(218, 23%, 16%);
+  --manrope-font: "Manrope", sans-serif;
+}
+body {
+  align-items: center;
+  background: var(--dark-blue);
+  display: flex;
+  flex-direction: column;
+  font-family: var(--manrope-font);
+  margin: 0;
+  text-align: center;
+}
+
+.advice {
+  background: var(--dark-gray-blue);
+  border-radius: 15px;
+  font-weight: 800;
+  margin-top: 300px;
+  max-width: 450px;
+  padding: 40px 40px 75px;
+}
+h1 {
+  color: var(--neon-green);
+  font-size: 12px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+p {
+  color: var(--light-cyan);
+  font-size: 28px;
+}
+.divider-1 {
+  max-width: 100%;
+}
+.divider-2 {
+  display: none;
+}
+
+.dice-wrapper {
+  display: flex;
+  left: 0;
+  justify-content: center;
+  position: absolute;
+  right: 0;
+}
+#dice-btn {
+  background: var(--neon-green);
+  border: 1px solid var(--neon-green);
+  border-radius: 50%;
+  height: 60px;
+  margin: 50px 0 0;
+  width: 60px;
+}
+
+#dice-btn:hover {
+  box-shadow: 0 0 50px var(--neon-green);
+  cursor: pointer;
+}
+
+.footer h5 {
+  color: var(--light-cyan);
+  font-size: 15px;
+  font-weight: 500;
+  margin-top: 100px;
+}
+
+.footer a {
+  color: var(--neon-green);
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 400px) {
+  .advice {
+    margin: 100px 10px;
+  }
+  .divider-1 {
+    display: none;
+  }
+  .divider-2 {
+    display: block;
+  }
+
+  .footer h5 {
+    margin-top: 20px;
+  }
+}
