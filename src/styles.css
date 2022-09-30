@@ -34,11 +34,12 @@ p {
   color: var(--light-cyan);
   font-size: 28px;
 }
-.divider-1 {
+.divider-desktop {
   max-width: 100%;
 }
-.divider-2 {
+.divider-mobile {
   display: none;
+  margin: 0 auto;
 }
 
 .dice-wrapper {
@@ -81,15 +82,22 @@ p {
 @media (max-width: 400px) {
   .advice {
     margin: 75px 15px;
+    padding: 40px 20px 75px;
   }
-  .divider-1 {
+  .divider-desktop {
     display: none;
   }
-  .divider-2 {
+  .divider-mobile {
     display: block;
+    max-width: 100%;
   }
-
+  #dice-btn:hover {
+    box-shadow: none;
+  }
   .footer h5 {
     margin-top: 20px;
+  }
+  .footer a:hover {
+    text-decoration: none;
   }
 }
